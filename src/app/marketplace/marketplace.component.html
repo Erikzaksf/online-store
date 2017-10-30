@@ -1,3 +1,7 @@
 <h2>DubPlate Market</h2>
 
-<p>List of dubs incoming!</p>
+<div *ngFor="let album of albums" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{album.title}}</em> by {{album.artist}}</h3>
+  </div>
+</div>
